@@ -1,10 +1,6 @@
 {
   "compilerOptions": {
     "checkJs": true,
-    "paths": {
-      "~/*": ["./src/*"],
-      "~root/*": ["./*"]
-    },
     "types": ["node"]
   },
   "extends": "astro/tsconfigs/strictest",
