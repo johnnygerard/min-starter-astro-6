@@ -33,7 +33,6 @@ out [Creating a repository from a template](https://docs.github.com/en/repositor
 - **System**: [Ubuntu](https://ubuntu.com/desktop)
 - **Editor**: [VS Code](https://code.visualstudio.com/)
 - **Formatter**: [Prettier](https://prettier.io/)
-- **Linter**: [ESLint](https://eslint.org/)
 - **AI assistant**: [GitHub Copilot](https://github.com/features/copilot)
 
 ## Copyright

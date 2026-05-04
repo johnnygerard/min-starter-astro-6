@@ -9,18 +9,12 @@
     "tailwindcss": "^4.2.4"
   },
   "devDependencies": {
-    "@eslint/js": "^10.0.1",
-    "@eslint/json": "^1.2.0",
-    "@eslint/markdown": "^8.0.1",
     "@playwright/test": "^1.59.1",
     "@types/node": "^24.12.2",
-    "eslint": "^10.3.0",
-    "globals": "^17.6.0",
     "prettier": "^3.8.3",
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-tailwindcss": "^0.8.0",
     "typescript": "^5.9.3",
-    "typescript-eslint": "^8.59.1",
     "vite-tsconfig-paths": "^6.1.1",
     "vitest": "^4.1.5",
     "wrangler": "^4.87.0"
@@ -52,12 +46,10 @@
     "dev": "astro dev",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "lint": "eslint",
-    "postlint": "echo 'Linting successful! 🚀'",
     "preview": "astro preview --port 3321",
     "pw": "playwright",
     "pw:test": "playwright test",
-    "qa": "npm run build && npm run check && npm run format:check && npm run lint && npm test && npm run pw:test",
+    "qa": "npm run build && npm run check && npm run format:check && npm test && npm run pw:test",
     "test": "vitest run",
     "test:watch": "vitest watch",
     "wrangler": "wrangler"
