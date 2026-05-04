@@ -31,13 +31,9 @@ const { props } = Astro;
     <title>{props.title}</title>
   </head>
   <body>
-    {/* This wrapper prevents a body overflow in mobile browsers. */}
+    {/* Wrap with `div` to prevent a body overflow in mobile browsers. */}
     <div>
-      {/* <Header /> */}
-      <main>
-        <slot />
-      </main>
-      {/* <Footer /> */}
+      <slot />
     </div>
   </body>
 </html>
