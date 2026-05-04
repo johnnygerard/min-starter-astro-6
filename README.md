@@ -1,4 +1,4 @@
-# Astro 6 Starter
+# Astro 6 Minimal Starter
 
 This starter repository facilitates the creation of new Astro projects using the configuration described below.
 
@@ -13,20 +13,15 @@ out [Creating a repository from a template](https://docs.github.com/en/repositor
 ### Frontend
 
 - **Framework**: [Astro 6](https://astro.build/)
-- **Styling**: [Tailwind CSS 4](https://tailwindcss.com/)
 
 ### Backend
 
-- **Hosting**: [Cloudflare Workers](https://workers.cloudflare.com/)
+- **Serverless**: [Cloudflare Workers](https://workers.cloudflare.com/)
 
 ### Quality Assurance
 
 - **Unit testing**: [Vitest](https://vitest.dev/)
 - **End-to-end testing**: [Playwright](https://playwright.dev/)
-
-## Notes
-
-- `.nvmrc` is used primarily as a way to specify the Node.js version for Cloudflare Workers (see [Build image](https://developers.cloudflare.com/workers/ci-cd/builds/build-image/))
 
 ## Dev Environment & Tools
 
@@ -34,6 +29,10 @@ out [Creating a repository from a template](https://docs.github.com/en/repositor
 - **Editor**: [VS Code](https://code.visualstudio.com/)
 - **Formatter**: [Prettier](https://prettier.io/)
 - **AI assistant**: [GitHub Copilot](https://github.com/features/copilot)
+
+## Notes
+
+- `.nvmrc` is used primarily as a way to specify the Node.js version for Cloudflare Workers (see [Build image](https://developers.cloudflare.com/workers/ci-cd/builds/build-image/))
 
 ## Copyright
 
