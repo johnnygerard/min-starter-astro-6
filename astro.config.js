@@ -14,7 +14,7 @@ export default defineConfig({
      * @see https://fonts.google.com/specimen/Geist/about
      */
     {
-      cssVariable: "--font-geist",
+      cssVariable: "--default-font",
       name: "Geist",
       provider: fontProviders.google(),
       styles: ["normal", "italic"],
