@@ -18,7 +18,7 @@ export default defineConfig({
   projects: [
     {
       name: "global-setup",
-      testMatch: "global-setup.ts",
+      testMatch: "global-setup.js",
     },
 
     {
