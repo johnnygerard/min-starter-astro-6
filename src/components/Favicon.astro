@@ -1,11 +1,19 @@
+---
+import faviconDark from "../assets/images/favicon-dark.png";
+import faviconLight from "../assets/images/favicon-light.png";
+---
+
 {
-  (["light", "dark"] as const).map((theme) => (
-    <link
-      rel="icon"
-      href={`/assets/images/favicon-${theme}.png`}
-      media={`(prefers-color-scheme: ${theme})`}
-      type="image/png"
-      sizes="32x32"
-    />
-  ))
+  ["dark", "light"].map((theme) => {
+    const image = theme === "dark" ? faviconDark : faviconLight;
+    return (
+      <link
+        rel="icon"
+        href={image.src}
+        media={`(prefers-color-scheme: ${theme})`}
+        type="image/png"
+        sizes={`${image.width}x${image.height}`}
+      />
+    );
+  })
 }
