@@ -9,7 +9,7 @@
   "compatibility_date": "2026-04-28",
   "compatibility_flags": ["global_fetch_strictly_public"],
   "main": "@astrojs/cloudflare/entrypoints/server",
-  "name": "starter-astro-6",
+  "name": "min-starter-astro-6",
   "observability": {
     "enabled": true
   },

@@ -30,7 +30,7 @@
       "version": "24"
     }
   },
-  "name": "starter-astro-6",
+  "name": "min-starter-astro-6",
   "private": true,
   "scripts": {
     "astro": "astro",
