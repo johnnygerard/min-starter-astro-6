@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "checkJs": true,
+    "paths": {
+      "~/*": ["./src/*"],
+      "~root/*": ["./*"]
+    },
+    "types": ["node"]
+  },
+  "extends": "astro/tsconfigs/strictest",
+  "include": [
+    "__tests__",
+    ".astro/types.d.ts",
+    "*.config.*",
+    "pw",
+    "src",
+    "worker-configuration.d.ts"
+  ]
+}
