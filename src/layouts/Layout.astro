@@ -3,13 +3,13 @@ import { Font } from "astro:assets";
 import Favicon from "~/components/Favicon.astro";
 import "~/styles/globals.css";
 
-type Props = {
+interface Props {
   title: string;
   description: string;
-  indexed?: boolean;
-};
+  noIndex?: boolean;
+}
 
-const { title, description, indexed = true } = Astro.props;
+const { props } = Astro;
 ---
 
 <!doctype html>
@@ -18,15 +18,17 @@ const { title, description, indexed = true } = Astro.props;
     <meta charset="utf-8" />
     <Font cssVariable="--font-geist" preload />
     <Favicon />
+    <meta name="description" content={props.description} />
     <meta name="generator" content={Astro.generator} />
-    <meta name="description" content={description} />
     {
-      /* Bing: https://www.bing.com/webmasters/help/robots-meta-tags-and-attributes-that-bing-supports-5198d240 */
-      /* Google: https://developers.google.com/search/docs/crawling-indexing/robots-meta-tag#directives */
+      props.noIndex && (
+        // Bing: https://www.bing.com/webmasters/help/robots-meta-tags-and-attributes-that-bing-supports-5198d240
+        // Google: https://developers.google.com/search/docs/crawling-indexing/robots-meta-tag#directives
+        <meta name="robots" content="noindex" />
+      )
     }
-    {!indexed && <meta name="robots" content="noindex" />}
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{title}</title>
+    <title>{props.title}</title>
   </head>
   <body>
     {/* This wrapper prevents a body overflow in mobile browsers. */}
