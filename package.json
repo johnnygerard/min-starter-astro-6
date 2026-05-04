@@ -47,7 +47,7 @@
     "qa": "npm run build && npm run check && npm run format:check && npm test && npm run pw:test",
     "test": "vitest run",
     "test:watch": "vitest watch",
-    "wrangler": "wrangler"
+    "wg": "wrangler"
   },
   "type": "module",
   "version": "0.0.0"
