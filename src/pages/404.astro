@@ -9,12 +9,33 @@ import Layout from "../layouts/Layout.astro";
 >
   <main>
     <hgroup>
-      <p>404 Error</p>
+      <p class="eyebrow">404 Error</p>
       <h1>Page Not Found</h1>
     </hgroup>
-    <p>Sorry, the page you are looking for does not exist or has been moved.</p>
-    <div>
-      <a href="/">Back to Home</a>
-    </div>
+    <p class="description">
+      Sorry, the page you are looking for does not exist or has been moved.
+    </p>
+    <a href="/">Back to Home</a>
   </main>
+
+  <style>
+    main {
+      padding: 2rem;
+    }
+
+    .eyebrow {
+      font-size: 0.875rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .description {
+      margin-top: 1rem;
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 1.5rem;
+    }
+  </style>
 </Layout>

@@ -17,6 +17,7 @@ const { props } = Astro;
     <meta charset="utf-8" />
     <Font cssVariable="--default-font" preload />
     <Favicon />
+    <meta name="color-scheme" content="dark light" />
     <meta name="description" content={props.description} />
     <meta name="generator" content={Astro.generator} />
     {
@@ -28,6 +29,20 @@ const { props } = Astro;
     }
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{props.title}</title>
+    <style is:global>
+      * {
+        margin: 0;
+      }
+
+      body {
+        font-family: var(--default-font);
+      }
+
+      h1 {
+        font-size: 2rem;
+        font-weight: 700;
+      }
+    </style>
   </head>
   <body>
     {/* Wrap with `div` to prevent a body overflow in mobile browsers. */}
