@@ -27,7 +27,6 @@ out [Creating a repository from a template](https://docs.github.com/en/repositor
 ## Notes
 
 - `.nvmrc` is used primarily as a way to specify the Node.js version for Cloudflare Workers (see [Build image](https://developers.cloudflare.com/workers/ci-cd/builds/build-image/))
-- The GitHub Action `actions/setup-node@v6` relies on both `package.json` `engines` and `devEngines` to set the Node.js version and automatically cache npm dependencies.
 
 ## Dev Environment & Tools
 
