@@ -28,7 +28,8 @@
   "scripts": {
     "astro": "astro",
     "build": "astro build",
-    "check:deploy": "wrangler deploy --outdir dist --dry-run",
+    "deploy": "wrangler deploy --outdir dist",
+    "deploy:check": "npm run deploy -- --dry-run",
     "dev": "astro dev",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
