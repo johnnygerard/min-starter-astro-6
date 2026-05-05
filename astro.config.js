@@ -4,7 +4,9 @@ import { defineConfig, fontProviders } from "astro/config";
 
 // https://docs.astro.build/en/reference/configuration-reference/
 export default defineConfig({
-  adapter: cloudflare(),
+  adapter: cloudflare({
+    imageService: "compile",
+  }),
   build: {
     format: "file",
   },
