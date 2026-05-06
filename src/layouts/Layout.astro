@@ -2,11 +2,11 @@
 import { Font } from "astro:assets";
 import Favicon from "../components/Favicon.astro";
 
-interface Props {
+type Props = {
   title: string;
   description: string;
   noIndex?: boolean;
-}
+};
 
 const { title, description, noIndex = false } = Astro.props;
 ---
