@@ -8,7 +8,7 @@ interface Props {
   noIndex?: boolean;
 }
 
-const { props } = Astro;
+const { title, description, noIndex = false } = Astro.props;
 ---
 
 <!doctype html>
@@ -18,17 +18,17 @@ const { props } = Astro;
     <Font cssVariable="--default-font" preload />
     <Favicon />
     <meta name="color-scheme" content="dark light" />
-    <meta name="description" content={props.description} />
+    <meta name="description" content={description} />
     <meta name="generator" content={Astro.generator} />
     {
-      props.noIndex && (
+      noIndex && (
         // Bing: https://www.bing.com/webmasters/help/robots-meta-tags-and-attributes-that-bing-supports-5198d240
         // Google: https://developers.google.com/search/docs/crawling-indexing/robots-meta-tag#directives
         <meta name="robots" content="noindex" />
       )
     }
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{props.title}</title>
+    <title>{title}</title>
     <style is:global>
       * {
         margin: 0;
